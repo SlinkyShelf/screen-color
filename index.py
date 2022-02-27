@@ -12,7 +12,7 @@ def on_press(key):
         if key.char == "s":
             mousex = mouse.position[0]
             mousey = mouse.position[1]
-            im = pyautogui.screenshot("test.png", region=(mousex,mousey, 1, 1))
+            im = pyautogui.screenshot(region=(mousex,mousey, 1, 1))
             pix = im.load()[0, 0]
             print(pix)
             print("r =", pix[0])
